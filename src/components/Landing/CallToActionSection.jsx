@@ -7,7 +7,12 @@ const CallToActionSection=()=>{
                 <span className="block text-blue-100"> Create your account today</span>
                 </h2>
                 <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-
+                    <div className="inline-flex rounded-md shadow">
+                        <button className="inline-flex item-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover::bg-blue-50 transition-colors duration-200">
+                            Sign Up For Free.
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
         </div>

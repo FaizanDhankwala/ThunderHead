@@ -10,13 +10,26 @@ import { testimonials } from "../../src/assets/testimonials"; // adjust path if 
 
 import { pricingPlans  } from "../../src/assets/pricingPlans"; // adjust path if needed
 
+import { useEffect } from "react";   // ✅ add this
+import { useClerk, useUser } from "@clerk/clerk-react";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+   const {openSignIn, openSignUp}=useClerk();
+   const {isSignedIn}=useUser();
+   const navigate= useNavigate();
+useEffect(()=>{
+    if(isSignedIn){
+        navigate("/dashboard");
+    }
+}, [isSignedIn, navigate]);
+   
+
     return (
         <div className="landing-page bg-gradient-to-b from-gray-50 to-gray-100">
 
             {/* Hero Section*/}
-            <HeroSection />
+            <HeroSection openSignIn={openSignIn} openSignUp={openSignUp} />
 
             {/* Feature Section*/}
             <FeaturesSection features={features} />
