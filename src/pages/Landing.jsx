@@ -35,7 +35,7 @@ useEffect(()=>{
             <FeaturesSection features={features} />
 
             {/* Pricing*/}
-            <PricingSection pricingPlans={pricingPlans} />
+            <PricingSection pricingPlans={pricingPlans} openSignUp={openSignUp} />
 
 
             {/* Testimonals*/}
@@ -43,7 +43,7 @@ useEffect(()=>{
 
 
             {/* Call to Action*/}
-            <CallToActionSection/>
+            <CallToActionSection  openSignUp={openSignUp}/>
 
 
             {/* Footer Section*/}

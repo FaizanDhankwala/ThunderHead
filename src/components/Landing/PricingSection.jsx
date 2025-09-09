@@ -1,4 +1,4 @@
-const PricingSection = ({ pricingPlans }) => {
+const PricingSection = ({ pricingPlans, openSignUp }) => {
   return (
     <div className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +55,7 @@ const PricingSection = ({ pricingPlans }) => {
                   ))}
                 </ul>
 
-                <button
+                <button onClick={()=> openSignUp()}
                   className={`mt-8 w-full flex items-center justify-center px-4 py-2 rounded-lg text-white font-medium ${
                     plan.highlighted
                       ? "bg-blue-600 hover:bg-blue-700"
