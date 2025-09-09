@@ -1,0 +1,60 @@
+// src/assets/data.js
+
+export const testimonials = [
+  {
+    name: "Michael Chen",
+    role: "Freelance Designer",
+    company: "Self-employed",
+    image: "https://randomuser.me/api/portraits/men/46.jpg",
+    quote: "As a freelancer, I need to share large design files with clients securely.",
+    rating: 5,
+  },
+  {
+    name: "Priya Sharma",
+    role: "Project Manager",
+    company: "TechSolutions Ltd.",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    quote: "Managing project files across multiple teams used to be a nightmare until we found CloudShare.",
+    rating: 4,
+  },
+  {
+    name: "David Johnson",
+    role: "Software Engineer",
+    company: "InnovaSoft",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    quote: "The ease of collaboration has boosted our team's productivity significantly.",
+    rating: 5,
+  },
+  {
+    name: "Sophia Martinez",
+    role: "Marketing Specialist",
+    company: "CreativeWorks",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    quote: "CloudShare helps me organize campaign assets and share them effortlessly with clients.",
+    rating: 4,
+  },
+  {
+    name: "James Wilson",
+    role: "Entrepreneur",
+    company: "StartupHub",
+    image: "https://randomuser.me/api/portraits/men/28.jpg",
+    quote: "Reliable and simple to use — exactly what startups like mine need.",
+    rating: 5,
+  },
+  {
+    name: "Emily Davis",
+    role: "UX Designer",
+    company: "Designify",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    quote: "I love how intuitive the platform is. It makes design collaboration smooth and fun.",
+    rating: 5,
+  },
+  {
+    name: "Liam Anderson",
+    role: "Content Creator",
+    company: "YouTube",
+    image: "https://randomuser.me/api/portraits/men/19.jpg",
+    quote: "Sharing large video files with editors used to be painful — not anymore!",
+    rating: 4,
+  },
+];
